@@ -1,8 +1,10 @@
 const express = require("express");
 const app = express();
+const cors = require("cors")
 const PORT = 3000;
 
 // Middleware to parse JSON
+app.use(cors());
 app.use(express.json());
 
 // Sample in-memory data
